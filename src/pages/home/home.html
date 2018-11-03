@@ -6,10 +6,9 @@
 
 <ion-content padding>
   <h2>Welcome to Ionic!</h2>
-  <p>
-   Weather is: {{weather}}
+  <p *ngIf="weather">
+   Weather in Buraydah is: {{weather}}
   </p>
   <button ion-button (click)='showWeather()'>Show weather</button>
-  <button ion-button>Button</button>
 
 </ion-content>
